@@ -2,7 +2,7 @@ FLAGS = -Ofast
 TARGET = main
 MAKEFLAGS += --silent
 b:
-	gcc $(FLAGS) -o $(TARGET) $(TARGET).cpp
+	g++ -o $(TARGET) $(TARGET).cpp
 	@echo "Compiled successfully"
 strip:
 	strip $(TARGET)
